@@ -1,0 +1,56 @@
+.myButton {
+	background-color:#44c767;
+	border-radius:20px;
+	border:1px solid #18ab29;
+	display:inline-block;
+    margin-top: 10vh;
+    margin-left: 2vw;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+}
+/*Hover to change color*/
+.myButton1:hover/* TODO - select the right pseudo-class */ {
+	background-color:#2a88bf;
+}
+.myButton1:hover/* TODO - select the right pseudo-class */{
+    position:relative;
+    top:1px;
+}
+
+/*C.lick to change color*/
+.myButton2:active/* TODO - select the right pseudo-class */ {
+    background-color: pink;
+}
+
+/*Change color after visited*/
+.myButton3:link,.myButton3:visited/* TODO - select the right pseudo-class */ {
+    background-color: brown;
+}
+
+.myButton4:link,.myButton4:visited/* TODO - select the right pseudo-class */{
+    background-color: lightcoral;
+}
+
+/*Display new div after you hover the existing one*/
+.hide{
+	/*TODO - select the correct display to make the second dive invisible*/
+	display:none;
+}
+
+.myMagicDiv:hover/* TODO - select the right pseudo-class */ + .hide {
+	display: block;
+	color: rgb(199, 138, 68);
+}
+
+.myDiv{
+	display: flex;
+	justify-content: center;
+	margin-top: 10vh;
+}
+
+
+
+

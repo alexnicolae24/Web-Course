@@ -1,0 +1,202 @@
+body {
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-image: url("bck.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    color: rgb(31, 28, 28);
+    font-size: 68px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+  h2 {
+    color: rgb(162, 58, 162);
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+  #counter{
+    color: rgb(160, 107, 7);
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+ 
+  ul li:hover {
+    background: #ddd;
+  }
+
+  ul li.completed {
+    background: blueviolet;
+    color: white;
+    text-decoration: line-through;
+  }
+
+  ul li.completed::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .close:hover {
+    background-color: crimson;
+    color: white;
+  }
+
+  .header {
+    font: 80px;
+    color: black;
+
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  .add {
+    padding: 10px;
+    width: 25%;
+    font-weight: bold;
+    font-style: italic;
+    background-color: darkblue;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .add:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  #clear-list{
+    width: 30%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xx-large;
+    margin: 40px 35%;
+    background-color: darkgreen;
+    color: white;
+  }
+
+  #clear-list:hover{
+    background-color: green;
+    color: white;
+  }
+
+  #filter-all{
+    width: 10%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    
+    background-color: darkblue;
+    color: white;
+  }
+
+  #filter-all:hover{
+    background-color: blue;
+    color: white;
+  }
+
+  #filter-active{
+    width: 10%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    background-color: darkblue;
+    color: white;
+  }
+
+  #filter-active:hover{
+    background-color: blue;
+    color: white;
+  }
+
+  #filter-completed{
+    width: 15%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    background-color: darkblue;
+    color: white;
+  }
+
+  #filter-completed:hover{
+    background-color: blue;
+    color: white;
+  }
+
+  #clear-completed{
+    width: 20%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+    background-color: darkblue;
+    color: white;
+  }
+
+  #clear-completed:hover{
+    background-color: blue;
+    color: white;
+  }
+
+
+  

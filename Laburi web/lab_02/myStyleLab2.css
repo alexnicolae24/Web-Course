@@ -1,0 +1,128 @@
+body {
+	background-color: bisque;
+}
+
+.head {
+    /* TODO - set the head color */
+    background-color: blue;
+    
+	/* TODO - make the man's head like a circle */
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    /* TODO - put the head of the man in the middle of the page*/
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.all_body {
+	width: 100%;
+    height: 15vh;
+	text-align: center;
+}
+
+.left_hand {
+    /* TODO - set the left hand color */
+    background-color:red;
+    width: 2vw;
+    height: 25vh;
+    /* TODO - modify the display properties of the div */
+
+    /* TODO - set the relative position of the man's left hand to the man's body */
+    display:inline-block;
+    position: relative;
+    right: 67px;
+
+    
+    animation-name: animation_1;
+    
+    /* TODO - set other properties of this animation */
+    transform-origin: 100% 0%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: infinite;
+    
+}
+
+.body1 {
+    /* TODO - set the man's body color */
+    background-color: blue;
+    /* TODO - set the width and the height of the man's body */
+    width: 10vw;
+    height: 40vh;
+    left: 690px;
+	display: inline-block;
+    position: absolute;
+}
+
+.right_hand {
+    /* TODO - set the right hand color */
+    background-color: red;
+    width: 2vw;
+    height: 25vh;
+    /* TODO - modify the display properties of the div */
+
+    /* TODO - set the relative position of the man's right hand to the man's body */
+    display: inline-block;
+    position: relative;
+    left: 80px;
+    animation-name: animation_2;
+    /* TODO - set other properties of this animation */
+    transform-origin: 10% 0%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,1,1,1);
+}
+
+.legs {
+    width: 100%;
+    height: 125vh;
+	text-align: center;
+}
+
+.left_leg {
+    /* TODO - set the left leg color */
+    background-color: red;
+	/* TODO - modify the display properties of the div */
+    width: 2vw;
+    height: 25vh;
+    margin-left: 5.25vw;
+    top:179px;
+    right:70px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.right_leg {
+    /* TODO - set the left leg color */
+    background-color: red;
+	/* TODO - modify the display properties of the div */
+    width: 2vw;
+    height: 25vh;
+    margin-left: 0.75vw;
+    top:179px;
+    left:6px;
+    position: relative;
+    display:inline-block;
+}
+
+@keyframes animation_1 {
+    /* TODO - make an animation from 0% to 100% */
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes animation_2 {
+    /* TODO - make an animation with keywords "from" and "to" */
+    from {
+        transform: rotate(-40deg);
+    }
+    to {
+        transform: rotate(80deg);
+    }
+}

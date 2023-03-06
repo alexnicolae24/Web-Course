@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="pr.css">
+  </head>
+  <body>
+    <h1>My To Do List</h2>
+    <button type="button" id="filter-all" onclick="filterAll()">All</button>
+    <button type="button" id="filter-active" onclick="filterActive()">Active</button>
+    <button type="button" id="filter-completed" onclick="filterCompleted()">Completed</button>
+    <button type="button" id="clear-completed" onclick="clearCompleted()">Clear Completed</button>
+    <form autocomplete="off" id="form">
+    <div class="header">
+      <input  type="text" id="myInput" placeholder="Enter what you have to do...">
+      <span onclick="addElement()" class="add">Add</span>
+    </div>
+    </form>
+    <ul id="myUL">
+    </ul>
+    <div class="count"></div>
+    <button type="button" id="clear-list" onclick="clearAll()">Clear All</button>
+    <script  src="pr.js"></script>
+    <div id ="counter"></div>
+    <h2> Made by Nicolae Alexandru-Dimitrie</h2>
+  </body>
+</html>
